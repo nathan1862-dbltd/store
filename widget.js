@@ -1,0 +1,713 @@
+<!-- AI Chat Widget - Paste this in your footer -->
+<style>
+    /* Widget Button */
+    .ai-widget-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--primary-color, #4a6cf7);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(74, 108, 247, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        z-index: 999999;
+    }
+    .ai-widget-btn:hover {
+        transform: scale(1.1);
+        background: var(--primary-dark, #3a5ce5);
+        box-shadow: 0 6px 16px rgba(74, 108, 247, 0.4);
+    }
+    .ai-widget-btn svg {
+        width: 30px;
+        height: 30px;
+        fill: currentColor;
+    }
+
+    /* Chat Window */
+    .ai-chat-window {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 380px;
+        height: 600px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 1000000;
+        animation: slideIn 0.3s ease;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Chat Header */
+    .ai-chat-header {
+        background: linear-gradient(135deg, var(--primary-color, #4a6cf7), var(--secondary-color, #9d6bff));
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: move;
+    }
+    .ai-chat-header h3 {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .online-indicator {
+        width: 8px;
+        height: 8px;
+        background: #4ade80;
+        border-radius: 50%;
+        display: inline-block;
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+    .ai-header-actions {
+        display: flex;
+        gap: 12px;
+    }
+    .ai-header-actions button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+        padding: 0 4px;
+    }
+    .ai-header-actions button:hover {
+        opacity: 1;
+    }
+
+    /* Messages Container */
+    .ai-chat-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px;
+        background: #f8fafc;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Message Bubbles */
+    .ai-message {
+        max-width: 85%;
+        padding: 12px 16px;
+        border-radius: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        animation: messageAppear 0.3s ease;
+    }
+    @keyframes messageAppear {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .ai-user-message {
+        background: var(--primary-color, #4a6cf7);
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 4px;
+    }
+    .ai-bot-message {
+        background: white;
+        color: #1e293b;
+        align-self: flex-start;
+        border-bottom-left-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .ai-error-message {
+        background: #fee2e2;
+        color: #dc2626;
+        align-self: center;
+        border-left: 3px solid #dc2626;
+        font-size: 13px;
+    }
+
+    /* Typing Indicator */
+    .ai-typing {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        padding: 12px 16px;
+        background: white;
+    }
+    .ai-typing span {
+        width: 8px;
+        height: 8px;
+        background-color: #94a3b8;
+        border-radius: 50%;
+        display: inline-block;
+        animation: typingDot 1.4s infinite ease-in-out both;
+    }
+    .ai-typing span:nth-child(1) { animation-delay: -0.32s; }
+    .ai-typing span:nth-child(2) { animation-delay: -0.16s; }
+    @keyframes typingDot {
+        0%, 80%, 100% { transform: scale(0.6); opacity: 0.6; }
+        40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Chat Input Area */
+    .ai-chat-input-area {
+        padding: 20px;
+        background: white;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        gap: 12px;
+    }
+    .ai-user-input {
+        flex: 1;
+        padding: 12px 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: 24px;
+        font-size: 14px;
+        outline: none;
+        transition: all 0.3s;
+        font-family: inherit;
+    }
+    .ai-user-input:focus {
+        border-color: var(--primary-color, #4a6cf7);
+        box-shadow: 0 0 0 3px rgba(74,108,247,0.1);
+    }
+    .ai-user-input:disabled {
+        background: #f1f5f9;
+        cursor: not-allowed;
+    }
+    .ai-send-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--primary-color, #4a6cf7);
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        flex-shrink: 0;
+    }
+    .ai-send-btn:hover:not(:disabled) {
+        background: var(--primary-dark, #3a5ce5);
+        transform: scale(1.05);
+    }
+    .ai-send-btn:disabled {
+        background: #cbd5e1;
+        cursor: not-allowed;
+    }
+    .ai-send-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+
+    /* Quick Actions */
+    .ai-quick-actions {
+        padding: 0 20px 20px 20px;
+        background: white;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .ai-quick-action {
+        padding: 6px 12px;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #1e293b;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .ai-quick-action:hover {
+        background: #e2e8f0;
+        border-color: #94a3b8;
+    }
+
+    /* Unread Badge */
+    .ai-unread-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: #ef4444;
+        color: white;
+        font-size: 12px;
+        min-width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        font-weight: 600;
+        border: 2px solid white;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 480px) {
+        .ai-chat-window {
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            border-radius: 0;
+        }
+        .ai-widget-btn {
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+</style>
+
+<!-- Chat Widget HTML -->
+<button class="ai-widget-btn" id="aiWidgetButton" aria-label="Open chat">
+    <svg viewBox="0 0 24 24">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+    </svg>
+    <span class="ai-unread-badge" id="aiUnreadBadge" style="display: none;">0</span>
+</button>
+
+<div class="ai-chat-window" id="aiChatWindow" aria-hidden="true" role="dialog" aria-label="Chat window">
+    <div class="ai-chat-header" id="aiChatHeader">
+        <h3>
+            <span class="online-indicator"></span>
+            AI Assistant
+        </h3>
+        <div class="ai-header-actions">
+            <button id="aiMinimizeBtn" aria-label="Minimize">−</button>
+            <button id="aiCloseBtn" aria-label="Close">×</button>
+        </div>
+    </div>
+    
+    <div class="ai-chat-messages" id="aiChatMessages" role="list"></div>
+    
+    <div class="ai-quick-actions" id="aiQuickActions">
+        <button class="ai-quick-action" data-message="Hello!">👋 Hello</button>
+        <button class="ai-quick-action" data-message="What can you do?">🤔 Help</button>
+        <button class="ai-quick-action" data-message="Contact support">📧 Support</button>
+        <button class="ai-quick-action" data-message="Pricing">💰 Pricing</button>
+    </div>
+    
+    <div class="ai-chat-input-area">
+        <input type="text" class="ai-user-input" id="aiUserInput" 
+               placeholder="Type your message..." 
+               aria-label="Type your message"
+               maxlength="500">
+        <button class="ai-send-btn" id="aiSendBtn" aria-label="Send message">
+            <svg viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Widget JavaScript -->
+<script>
+    (function() {
+        // ========== CONFIGURATION ==========
+        const CONFIG = {
+            apiUrl: '/ai/api/chat.php',           // Change to your backend endpoint
+            primaryColor: '#4a6cf7',                // Main brand color
+            secondaryColor: '#9d6bff',              // Gradient secondary color
+            welcomeMessage: "Hello! I'm your AI assistant. How can I help you today?",
+            typingSpeed: 15,
+            maxMessageLength: 500,
+            enableHistory: true
+        };
+
+        // Apply custom colors as CSS variables
+        document.documentElement.style.setProperty('--primary-color', CONFIG.primaryColor);
+        document.documentElement.style.setProperty('--secondary-color', CONFIG.secondaryColor);
+        // Simple darken for hover (you can adjust manually)
+        document.documentElement.style.setProperty('--primary-dark', '#3a5ce5');
+
+        // ========== WIDGET CLASS ==========
+        class DeepSeekWidget {
+            constructor(options) {
+                // Merge config with options
+                this.api = options.apiUrl;
+                this.typingSpeed = options.typingSpeed;
+                this.maxMessageLength = options.maxMessageLength;
+                this.enableHistory = options.enableHistory;
+                this.welcomeMessage = options.welcomeMessage;
+
+                // DOM Elements
+                this.btn = document.getElementById("aiWidgetButton");
+                this.chat = document.getElementById("aiChatWindow");
+                this.send = document.getElementById("aiSendBtn");
+                this.input = document.getElementById("aiUserInput");
+                this.messages = document.getElementById("aiChatMessages");
+                this.header = document.getElementById("aiChatHeader");
+                this.minimizeBtn = document.getElementById("aiMinimizeBtn");
+                this.closeBtn = document.getElementById("aiCloseBtn");
+                this.unreadBadge = document.getElementById("aiUnreadBadge");
+                this.quickActionsContainer = document.getElementById("aiQuickActions");
+
+                // State
+                this.isTyping = false;
+                this.messageQueue = [];
+                this.messageHistory = [];
+                this.unreadCount = 0;
+                this.isDragging = false;
+                this.dragOffset = { x: 0, y: 0 };
+
+                // Stop if widget HTML not loaded
+                if (!this.btn || !this.chat) return;
+
+                this.initEventListeners();
+                this.initAccessibility();
+                this.showWelcomeMessage();
+                this.loadHistory();
+            }
+
+            initEventListeners() {
+                this.btn.addEventListener("click", () => this.toggle());
+
+                if (this.minimizeBtn) {
+                    this.minimizeBtn.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        this.close();
+                    });
+                }
+
+                if (this.closeBtn) {
+                    this.closeBtn.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        this.close();
+                        this.unreadCount = 0;
+                        this.updateUnreadBadge();
+                    });
+                }
+
+                if (this.send) {
+                    this.send.addEventListener("click", () => this.sendMsg());
+                }
+
+                if (this.input) {
+                    this.input.addEventListener("keypress", (e) => {
+                        if (e.key === "Enter") {
+                            e.preventDefault();
+                            this.sendMsg();
+                        }
+                    });
+
+                    this.input.addEventListener("input", () => {
+                        if (this.input.value.length > this.maxMessageLength) {
+                            this.input.value = this.input.value.slice(0, this.maxMessageLength);
+                        }
+                    });
+                }
+
+                if (this.quickActionsContainer) {
+                    this.quickActionsContainer.addEventListener("click", (e) => {
+                        const action = e.target.closest('.ai-quick-action');
+                        if (action && action.dataset.message) {
+                            this.input.value = action.dataset.message;
+                            this.sendMsg();
+                        }
+                    });
+                }
+
+                document.addEventListener("click", (e) => {
+                    if (!this.chat.contains(e.target) && !this.btn.contains(e.target)) {
+                        this.close();
+                    }
+                });
+
+                document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape" && this.isOpen()) {
+                        this.close();
+                    }
+                });
+
+                if (this.header) {
+                    this.header.addEventListener("mousedown", (e) => this.startDrag(e));
+                    document.addEventListener("mousemove", (e) => this.onDrag(e));
+                    document.addEventListener("mouseup", () => this.stopDrag());
+                }
+            }
+
+            initAccessibility() {
+                if (this.chat) {
+                    this.chat.setAttribute('role', 'dialog');
+                    this.chat.setAttribute('aria-label', 'Chat window');
+                    this.chat.setAttribute('aria-hidden', 'true');
+                }
+                if (this.input) {
+                    this.input.setAttribute('aria-label', 'Type your message');
+                }
+                if (this.send) {
+                    this.send.setAttribute('aria-label', 'Send message');
+                }
+            }
+
+            showWelcomeMessage() {
+                setTimeout(() => {
+                    this.add(this.welcomeMessage, "ai-bot-message");
+                }, 500);
+            }
+
+            toggle() {
+                this.isOpen() ? this.close() : this.open();
+            }
+
+            open() {
+                if (!this.chat) return;
+                this.chat.style.display = "flex";
+                this.chat.setAttribute('aria-hidden', 'false');
+                if (this.input) setTimeout(() => this.input.focus(), 300);
+                this.unreadCount = 0;
+                this.updateUnreadBadge();
+            }
+
+            close() {
+                if (!this.chat) return;
+                this.chat.style.display = "none";
+                this.chat.setAttribute('aria-hidden', 'true');
+            }
+
+            isOpen() {
+                return this.chat && this.chat.style.display === "flex";
+            }
+
+            setLoading(isLoading) {
+                if (this.send) {
+                    this.send.disabled = isLoading;
+                    this.send.setAttribute('aria-busy', isLoading.toString());
+                }
+                if (this.input) {
+                    this.input.disabled = isLoading;
+                }
+            }
+
+            add(text, cls) {
+                if (!this.messages) return;
+
+                const message = { text, cls, timestamp: new Date().toISOString() };
+                if (this.enableHistory) {
+                    this.messageHistory.push(message);
+                    this.saveHistory();
+                }
+
+                const div = document.createElement("div");
+                div.className = "ai-message " + cls;
+                div.textContent = text;
+                div.setAttribute('role', 'listitem');
+                this.messages.appendChild(div);
+                this.scrollToBottom();
+
+                if (!this.isOpen() && cls === "ai-bot-message") {
+                    this.unreadCount++;
+                    this.updateUnreadBadge();
+                }
+            }
+
+            scrollToBottom() {
+                if (this.messages) {
+                    this.messages.scrollTop = this.messages.scrollHeight;
+                }
+            }
+
+            updateUnreadBadge() {
+                if (this.unreadBadge) {
+                    if (this.unreadCount > 0) {
+                        this.unreadBadge.style.display = 'flex';
+                        this.unreadBadge.textContent = this.unreadCount;
+                    } else {
+                        this.unreadBadge.style.display = 'none';
+                    }
+                }
+            }
+
+            async typeReply(text) {
+                if (this.isTyping) {
+                    this.messageQueue.push(text);
+                    return;
+                }
+
+                this.isTyping = true;
+                const div = document.createElement("div");
+                div.className = "ai-message ai-bot-message";
+                div.setAttribute('role', 'listitem');
+                this.messages.appendChild(div);
+
+                let i = 0;
+                const type = () => {
+                    if (i < text.length) {
+                        div.textContent += text.charAt(i);
+                        i++;
+                        this.scrollToBottom();
+                        setTimeout(type, this.typingSpeed);
+                    } else {
+                        this.isTyping = false;
+                        if (this.enableHistory) {
+                            this.messageHistory.push({ text, cls: "ai-bot-message", timestamp: new Date().toISOString() });
+                            this.saveHistory();
+                        }
+                        if (!this.isOpen()) {
+                            this.unreadCount++;
+                            this.updateUnreadBadge();
+                        }
+                        if (this.messageQueue.length > 0) {
+                            const nextMessage = this.messageQueue.shift();
+                            this.typeReply(nextMessage);
+                        }
+                    }
+                };
+                type();
+            }
+
+            showTypingIndicator() {
+                const typing = document.createElement("div");
+                typing.className = "ai-message ai-bot-message ai-typing";
+                typing.innerHTML = "<span></span><span></span><span></span>";
+                typing.id = "ai-typing-indicator";
+                this.messages.appendChild(typing);
+                this.scrollToBottom();
+                return typing;
+            }
+
+            async sendMsg() {
+                const msg = this.input ? this.input.value.trim() : "";
+                if (!msg || this.isTyping) return;
+                if (msg.length > this.maxMessageLength) {
+                    this.add(`Message too long (max ${this.maxMessageLength} characters)`, "ai-error-message");
+                    return;
+                }
+
+                this.add(msg, "ai-user-message");
+                this.input.value = "";
+
+                const typing = this.showTypingIndicator();
+                this.setLoading(true);
+
+                try {
+                    const res = await fetch(this.api, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json", "X-Requested-With": "XMLHttpRequest" },
+                        body: JSON.stringify({ message: msg, history: this.enableHistory ? this.messageHistory.slice(-10) : [] })
+                    });
+
+                    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+
+                    const data = await res.json();
+                    if (typing && typing.parentNode) typing.remove();
+                    this.typeReply(data.reply || "I didn't understand that. Could you rephrase?");
+
+                } catch (err) {
+                    if (typing && typing.parentNode) typing.remove();
+                    this.add(`Connection error: ${err.message}`, "ai-error-message");
+                    console.error("Chat widget error:", err);
+                } finally {
+                    this.setLoading(false);
+                }
+            }
+
+            startDrag(e) {
+                if (e.target.closest('button')) return;
+                this.isDragging = true;
+                const rect = this.chat.getBoundingClientRect();
+                this.dragOffset = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+                this.chat.style.transition = 'none';
+            }
+
+            onDrag(e) {
+                if (!this.isDragging) return;
+                e.preventDefault();
+                let x = e.clientX - this.dragOffset.x;
+                let y = e.clientY - this.dragOffset.y;
+                const maxX = window.innerWidth - this.chat.offsetWidth;
+                const maxY = window.innerHeight - this.chat.offsetHeight;
+                x = Math.max(0, Math.min(x, maxX));
+                y = Math.max(0, Math.min(y, maxY));
+                this.chat.style.left = x + 'px';
+                this.chat.style.top = y + 'px';
+                this.chat.style.right = 'auto';
+                this.chat.style.bottom = 'auto';
+            }
+
+            stopDrag() {
+                if (this.isDragging) {
+                    this.isDragging = false;
+                    this.chat.style.transition = '';
+                }
+            }
+
+            saveHistory() {
+                try {
+                    localStorage.setItem('ai-chat-history', JSON.stringify(this.messageHistory.slice(-50)));
+                } catch (e) {
+                    console.warn('Failed to save chat history:', e);
+                }
+            }
+
+            loadHistory() {
+                try {
+                    const saved = localStorage.getItem('ai-chat-history');
+                    if (saved) this.messageHistory = JSON.parse(saved);
+                } catch (e) {
+                    console.warn('Failed to load chat history:', e);
+                }
+            }
+
+            clearHistory() {
+                if (this.messages) this.messages.innerHTML = '';
+                this.messageHistory = [];
+                this.messageQueue = [];
+                localStorage.removeItem('ai-chat-history');
+                this.showWelcomeMessage();
+            }
+
+            getHistory() {
+                return this.messageHistory;
+            }
+
+            destroy() {
+                this.messageQueue = [];
+                this.messageHistory = [];
+                localStorage.removeItem('ai-chat-history');
+                if (this.header) {
+                    this.header.removeEventListener("mousedown", this.startDrag);
+                }
+            }
+        }
+
+        // Initialize widget when DOM is ready
+        function initWidget() {
+            if (window.deepSeekWidget) {
+                console.warn('Chat widget already initialized');
+                return window.deepSeekWidget;
+            }
+            window.deepSeekWidget = new DeepSeekWidget(CONFIG);
+            return window.deepSeekWidget;
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initWidget);
+        } else {
+            initWidget();
+        }
+    })();
+</script>
