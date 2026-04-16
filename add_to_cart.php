@@ -66,39 +66,40 @@ if (!$product) {
 /* ================= RESOLVE PRICE ================= */
 $unitPrice = 0.0;
 
-if ($variantId > 0) {
-
-    $stmt = $mysqli->prepare("
-        SELECT price, discount_price, on_sale
-        FROM product_variants
-        WHERE id = ? AND product_id = ?
-        LIMIT 1
-    ");
-    $stmt->bind_param("ii", $variantId, $productId);
-    $stmt->execute();
-    $v = $stmt->get_result()->fetch_assoc();
-    $stmt->close();
-
-    if (!$v || $v['price'] === null) {
-        http_response_code(400);
-        exit('Invalid variant price');
-    }
-
-    if (
-        $v['on_sale'] == 1 &&
-        !empty($v['discount_price']) &&
-        $v['discount_price'] > 0
-    ) {
-        $unitPrice = (float)$v['discount_price'];
-    } else {
-        $unitPrice = (float)$v['price'];
-    }
-
-} else {
-
-    // If your products table DOES NOT contain price
+if ($variantId <= 0) {
     http_response_code(400);
     exit('Product requires variant selection');
+}
+
+$stmt = $mysqli->prepare("
+    SELECT price, discount_price, stock
+    FROM product_variants
+    WHERE id = ? AND product_id = ?
+    LIMIT 1
+");
+$stmt->bind_param("ii", $variantId, $productId);
+$stmt->execute();
+$v = $stmt->get_result()->fetch_assoc();
+$stmt->close();
+
+if (!$v || $v['price'] === null) {
+    http_response_code(400);
+    exit('Invalid variant');
+}
+
+$basePrice = (float)$v['price'];
+$discountPrice = isset($v['discount_price']) ? (float)$v['discount_price'] : 0.0;
+$stockQty = (int)($v['stock'] ?? 0);
+
+if ($stockQty <= 0) {
+    http_response_code(409);
+    exit('Selected variant is out of stock');
+}
+
+if ($discountPrice > 0 && $discountPrice < $basePrice) {
+    $unitPrice = $discountPrice;
+} else {
+    $unitPrice = $basePrice;
 }
 
 if ($unitPrice <= 0) {
@@ -112,23 +113,27 @@ $stmt = $mysqli->prepare("
     FROM cart_items
     WHERE cart_id = ?
       AND product_id = ?
-      AND variant_id <=> ?
+      AND variant_id = ?
     LIMIT 1
 ");
-
-$variantIdParam = ($variantId > 0) ? $variantId : null;
 
 $stmt->bind_param(
     "iii",
     $cartId,
     $productId,
-    $variantIdParam
+    $variantId
 );
 $stmt->execute();
 $existing = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
 if ($existing) {
+    $newQty = (int)$existing['quantity'] + $qty;
+    if ($newQty > $stockQty) {
+        http_response_code(409);
+        exit("Only {$stockQty} item(s) in stock for this variant");
+    }
+
     // Update quantity
     $stmt = $mysqli->prepare("
         UPDATE cart_items
@@ -139,6 +144,11 @@ if ($existing) {
     $stmt->execute();
     $stmt->close();
 } else {
+    if ($qty > $stockQty) {
+        http_response_code(409);
+        exit("Only {$stockQty} item(s) in stock for this variant");
+    }
+
     // Insert new cart item
     $stmt = $mysqli->prepare("
         INSERT INTO cart_items
@@ -151,7 +161,7 @@ if ($existing) {
         "iiiid",
         $cartId,
         $productId,
-        $variantIdParam,
+        $variantId,
         $qty,
         $unitPrice
     );
