@@ -1,0 +1,12 @@
+[30-Jan-2026 05:31:26 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/functions.php:7) in /home/uwnktxcpef/dbstores.shop/_helpers.php on line 31
+[30-Jan-2026 06:27:08 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/functions.php:7) in /home/uwnktxcpef/dbstores.shop/_helpers.php on line 31
+[30-Jan-2026 06:27:09 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/functions.php:7) in /home/uwnktxcpef/dbstores.shop/_helpers.php on line 31
+[30-Jan-2026 06:27:17 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/functions.php:7) in /home/uwnktxcpef/dbstores.shop/_helpers.php on line 31
+[23-Feb-2026 16:15:54 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/_helpers.php on line 4
+[23-Feb-2026 19:13:02 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/_helpers.php on line 4
+[19-Mar-2026 03:37:39 Asia/Tokyo] PHP Warning:  require_once(/home/oizckhtwym/dbstores.shop/admin/rewards/../../_helpers.php): Failed to open stream: No such file or directory in /home/oizckhtwym/dbstores.shop/admin/rewards/_admin_guard.php on line 3
+[19-Mar-2026 03:37:39 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/oizckhtwym/dbstores.shop/admin/rewards/../../_helpers.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/oizckhtwym/dbstores.shop/admin/rewards/_admin_guard.php:3
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/rewards/index.php(2): require_once()
+#1 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/rewards/_admin_guard.php on line 3

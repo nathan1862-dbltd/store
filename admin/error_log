@@ -1,0 +1,1020 @@
+[13-Feb-2026 21:11:26 UTC] PHP Warning:  require_once(admin_header.php): Failed to open stream: No such file or directory in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 3
+[13-Feb-2026 21:11:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'admin_header.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 3
+[14-Feb-2026 06:23:37 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'password' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php:9
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php(9): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 9
+[14-Feb-2026 06:24:41 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'password' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php:11
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php(11): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 11
+[14-Feb-2026 06:26:12 Asia/Tokyo] PHP Warning:  Undefined array key "password" in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:26:12 Asia/Tokyo] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:26:16 Asia/Tokyo] PHP Warning:  Undefined array key "password" in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:26:16 Asia/Tokyo] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:26:22 Asia/Tokyo] PHP Warning:  Undefined array key "password" in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:26:22 Asia/Tokyo] PHP Deprecated:  password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 17
+[14-Feb-2026 06:27:07 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[14-Feb-2026 06:31:14 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[13-Feb-2026 21:46:23 UTC] PHP Parse error:  Unmatched '}' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 119
+[13-Feb-2026 21:46:42 UTC] PHP Parse error:  Unmatched '}' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 121
+[13-Feb-2026 21:46:48 UTC] PHP Parse error:  Unmatched '}' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 121
+[13-Feb-2026 21:47:49 UTC] PHP Parse error:  Unmatched '}' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 121
+[13-Feb-2026 21:48:40 UTC] PHP Parse error:  Unmatched '}' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 120
+[14-Feb-2026 06:50:07 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[14-Feb-2026 06:50:14 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[14-Feb-2026 06:50:16 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[14-Feb-2026 06:50:32 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/points.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php on line 2
+[14-Feb-2026 06:50:37 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/points.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php on line 2
+[14-Feb-2026 06:51:28 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/points.php(2): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/points.php on line 2
+[14-Feb-2026 07:02:15 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'has_variant' in 'SET' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php:147
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php(147): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 147
+[14-Feb-2026 07:23:32 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'has_variant' in 'SET' in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php:185
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php(185): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 185
+[13-Feb-2026 22:27:12 UTC] PHP Parse error:  Unclosed '{' on line 62 in /home/uwnktxcpef/dbstores.shop/V3/admin/product_add.php on line 282
+[14-Feb-2026 11:23:46 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:47
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(47): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 47
+[14-Feb-2026 11:25:58 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.id' in 'ORDER BY' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:47
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(47): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 47
+[14-Feb-2026 11:26:35 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.id' in 'ORDER BY' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:47
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(47): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 47
+[14-Feb-2026 11:27:24 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.id' in 'ORDER BY' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:47
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(47): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 47
+[14-Feb-2026 11:31:26 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php:3
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php(3): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 3
+[14-Feb-2026 11:36:03 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php:3
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php(3): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 3
+[17-Feb-2026 13:26:28 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.order_id' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:48
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(48): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 48
+[17-Feb-2026 13:33:04 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 8
+[17-Feb-2026 13:33:41 Asia/Tokyo] PHP Warning:  Undefined array key "total_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:33:41 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:34:26 Asia/Tokyo] PHP Warning:  Undefined array key "total_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 49
+[17-Feb-2026 13:34:32 Asia/Tokyo] PHP Warning:  Undefined array key "total_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:34:32 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:36:10 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:38
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(38): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 38
+[17-Feb-2026 13:36:11 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:38
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(38): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 38
+[17-Feb-2026 13:36:14 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:38
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(38): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 38
+[17-Feb-2026 13:38:00 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:38
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(38): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 38
+[17-Feb-2026 13:38:00 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:19
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(19): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 19
+[17-Feb-2026 13:43:47 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:19
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(19): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 19
+[17-Feb-2026 13:43:50 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:32
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(32): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 32
+[17-Feb-2026 13:43:55 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:32
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(32): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 32
+[17-Feb-2026 13:45:58 Asia/Tokyo] PHP Warning:  Undefined array key "total_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:45:58 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 120
+[17-Feb-2026 13:52:44 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'u.full_name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:91
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(91): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 13:53:29 Asia/Tokyo] PHP Warning:  Undefined array key "username" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 183
+[17-Feb-2026 13:53:29 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 183
+[17-Feb-2026 13:53:29 Asia/Tokyo] PHP Warning:  Undefined array key "total_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 184
+[17-Feb-2026 13:53:29 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 184
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 188
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 188
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 191
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 191
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 192
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 192
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 196
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 197
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 197
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 13:57:00 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 188
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 188
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 191
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 191
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 192
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 192
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 196
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 197
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 197
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:07:52 Asia/Tokyo] PHP Warning:  Undefined array key "order_status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 208
+[17-Feb-2026 14:15:41 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:9
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(9): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 9
+[17-Feb-2026 05:16:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:16:07 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:16:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:16:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:16:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:18:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:20:08 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 05:21:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 2
+[17-Feb-2026 14:37:57 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:12
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(12): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 12
+[17-Feb-2026 14:37:59 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:12
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(12): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 12
+[17-Feb-2026 08:21:31 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 2
+[17-Feb-2026 08:23:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 3
+[17-Feb-2026 08:26:56 UTC] PHP Parse error:  Unclosed '{' on line 9 in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 114
+[17-Feb-2026 08:26:59 UTC] PHP Parse error:  Unclosed '{' on line 9 in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 114
+[17-Feb-2026 08:28:00 UTC] PHP Parse error:  Unclosed '{' on line 10 in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 09:24:42 UTC] PHP Parse error:  Unclosed '{' on line 10 in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 18:25:12 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function post_string() in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 8
+[17-Feb-2026 09:28:42 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 6
+[17-Feb-2026 09:29:13 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 6
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 53
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 62
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 81
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:33:34 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 53
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 62
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 81
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:34:52 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 53
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 61
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 62
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 79
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 81
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 91
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 92
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:34:53 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 93
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 105
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 18:38:05 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 105
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 18:38:07 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 18:41:21 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 18:50:33 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:06:56 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:36
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(36): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 36
+[17-Feb-2026 19:15:48 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:36
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(36): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 36
+[17-Feb-2026 19:16:56 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:20:18 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:23
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(23): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 23
+[17-Feb-2026 19:20:22 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:23
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(23): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 23
+[17-Feb-2026 19:25:16 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'uwnktxcpef_newecommerce.states' doesn't exist in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:33
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(33): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 33
+[17-Feb-2026 19:27:23 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:24 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:25 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:25 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:46 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:48 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:49 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:27:50 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 73
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 83
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 84
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 85
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 86
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 103
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 105
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 115
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 116
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 19:29:43 Asia/Tokyo] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 117
+[17-Feb-2026 10:33:07 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 10
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:38:38 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:47:06 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 19:47:11 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'final_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php:17
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php(17): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 17
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:48:07 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:48:08 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 19:48:14 Asia/Tokyo] PHP Warning:  Undefined array key "id" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 7
+[17-Feb-2026 19:48:14 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'final_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php:18
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php(18): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 18
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:48:32 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 10:48:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 2
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "name" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 62
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "state" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 66
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "region" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 67
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "township" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 68
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_address" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 69
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 94
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "discount_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 96
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "discount_amount" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 108
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "shipping_fee" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 109
+[17-Feb-2026 19:48:35 Asia/Tokyo] PHP Warning:  Undefined array key "final_price" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-view.php on line 110
+[17-Feb-2026 10:48:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘display_errors’" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 2
+[17-Feb-2026 19:49:22 Asia/Tokyo] PHP Warning:  Undefined array key "id" in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 11
+[17-Feb-2026 19:49:22 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'final_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php:22
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php(22): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order-update.php on line 22
+[17-Feb-2026 20:00:05 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 20:00:58 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[17-Feb-2026 20:01:05 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[22-Feb-2026 20:18:48 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function post_string() in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login_process.php on line 8
+[22-Feb-2026 20:21:30 Asia/Tokyo] PHP Warning:  require_once(/home/uwnktxcpef/dbstores.shop/V3/admin/../auth.php): Failed to open stream: No such file or directory in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 3
+[22-Feb-2026 20:21:30 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/uwnktxcpef/dbstores.shop/V3/admin/../auth.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php:3
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(2): require_once()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 3
+[22-Feb-2026 20:22:50 Asia/Tokyo] PHP Warning:  Undefined variable $search in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 40
+[22-Feb-2026 20:22:50 Asia/Tokyo] PHP Warning:  Undefined variable $search in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 42
+[22-Feb-2026 20:22:50 Asia/Tokyo] PHP Warning:  Undefined variable $res in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 67
+[22-Feb-2026 20:22:50 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:67
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 67
+[22-Feb-2026 20:23:35 Asia/Tokyo] PHP Warning:  require_once(/home/uwnktxcpef/dbstores.shop/V3/admin_common.php): Failed to open stream: No such file or directory in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 4
+[22-Feb-2026 20:23:35 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/uwnktxcpef/dbstores.shop/V3/admin_common.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 4
+[22-Feb-2026 20:23:53 Asia/Tokyo] PHP Warning:  require_once(/home/uwnktxcpef/dbstores.shop/V3/admin_common.php): Failed to open stream: No such file or directory in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 4
+[22-Feb-2026 20:23:53 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/uwnktxcpef/dbstores.shop/V3/admin_common.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 4
+[22-Feb-2026 11:29:47 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 5
+[22-Feb-2026 20:32:05 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[22-Feb-2026 20:32:11 Asia/Tokyo] PHP Warning:  require_once(/home/uwnktxcpef/dbstores.shop/V3/admin/../auth.php): Failed to open stream: No such file or directory in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 3
+[22-Feb-2026 20:32:11 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Failed opening required '/home/uwnktxcpef/dbstores.shop/V3/admin/../auth.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php:3
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/brands.php(2): require_once()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 3
+[22-Feb-2026 20:38:31 Asia/Tokyo] PHP Warning:  Constant DB_HOST already defined in /home/uwnktxcpef/dbstores.shop/config.php on line 11
+[22-Feb-2026 20:38:31 Asia/Tokyo] PHP Warning:  Constant DB_USER already defined in /home/uwnktxcpef/dbstores.shop/config.php on line 13
+[22-Feb-2026 20:38:31 Asia/Tokyo] PHP Warning:  Constant DB_PASS already defined in /home/uwnktxcpef/dbstores.shop/config.php on line 14
+[22-Feb-2026 20:38:31 Asia/Tokyo] PHP Warning:  Constant DB_NAME already defined in /home/uwnktxcpef/dbstores.shop/config.php on line 15
+[22-Feb-2026 20:38:31 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:42) in /home/uwnktxcpef/dbstores.shop/functions.php on line 7
+[22-Feb-2026 12:51:37 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/functions.php on line 14
+[22-Feb-2026 12:51:49 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/functions.php on line 14
+[22-Feb-2026 12:52:30 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/uwnktxcpef/dbstores.shop/V3/functions.php on line 14
+[22-Feb-2026 13:01:41 UTC] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php:5) in /home/uwnktxcpef/dbstores.shop/V3/functions.php on line 16
+[22-Feb-2026 13:03:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 18
+[22-Feb-2026 13:03:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 14
+[22-Feb-2026 13:15:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 14
+[22-Feb-2026 13:19:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function flash_get() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 20
+[22-Feb-2026 13:19:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function flash_get() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 20
+[22-Feb-2026 13:19:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function flash_get() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 20
+[22-Feb-2026 22:31:10 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[22-Feb-2026 22:32:54 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/login.php on line 14
+[23-Feb-2026 00:08:00 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:08:06 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:09:14 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:09:21 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:09:31 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:10:57 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 00:11:52 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[22-Feb-2026 15:14:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php:14
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php(14): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php on line 14
+[22-Feb-2026 15:15:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php:10
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php(10): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/dashboard.php on line 10
+[23-Feb-2026 00:16:31 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 01:29:15 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 01:45:43 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 01:55:47 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 02:02:09 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 02:02:54 Asia/Tokyo] PHP Fatal error:  Cannot redeclare ensureSessionStarted() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:16) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 15
+[23-Feb-2026 02:04:07 Asia/Tokyo] PHP Fatal error:  Cannot redeclare e() (previously declared in /home/uwnktxcpef/dbstores.shop/V3/functions.php:42) in /home/uwnktxcpef/dbstores.shop/V3/admin/_common.php on line 29
+[23-Feb-2026 02:07:24 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.category_id' in 'ON' in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:29
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(29): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 29
+[23-Feb-2026 02:07:58 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.category_id' in 'ON' in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:29
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(29): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 29
+[23-Feb-2026 02:08:25 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.category_id' in 'ON' in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:28
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(28): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 28
+[23-Feb-2026 02:08:50 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.category_id' in 'ON' in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php:30
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(30): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/products.php on line 30
+[23-Feb-2026 02:09:15 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function apm_flash_get() in /home/uwnktxcpef/dbstores.shop/V3/admin/_layout_top.php:2
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/products.php(36): require_once()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/_layout_top.php on line 2
+[23-Feb-2026 02:35:01 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'oi.discount_price' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:37
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(37): mysqli->query()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 37
+[23-Feb-2026 02:44:02 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.total_amount' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:69
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(69): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 69
+[23-Feb-2026 02:47:44 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.order_status' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:27
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(27): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 27
+[23-Feb-2026 02:47:45 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.order_status' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:27
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(27): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 27
+[23-Feb-2026 02:48:38 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.order_status' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:27
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(27): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 27
+[23-Feb-2026 02:48:40 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.order_status' in 'WHERE' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:27
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(27): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 27
+[23-Feb-2026 02:49:04 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'o.name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php:62
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php(62): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/orders.php on line 62
+[23-Feb-2026 02:56:01 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 7
+[23-Feb-2026 03:26:13 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 7
+[23-Feb-2026 04:41:28 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 7
+[23-Feb-2026 04:43:51 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'name' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:11
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(11): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 11
+[23-Feb-2026 04:56:23 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'shipping_fee' in 'SELECT' in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php:11
+Stack trace:
+#0 /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php(11): mysqli->prepare()
+#1 {main}
+  thrown in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 11
+[23-Feb-2026 05:06:54 Asia/Tokyo] PHP Warning:  Undefined array key "order_id" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_update.php on line 5
+[23-Feb-2026 05:06:54 Asia/Tokyo] PHP Warning:  Undefined array key "status" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_update.php on line 6
+[22-Feb-2026 21:34:22 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:34:27 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:36:42 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:36:49 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:37:43 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:37:45 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[22-Feb-2026 21:37:51 UTC] PHP Parse error:  syntax error, unexpected identifier "ENUM" in /home/uwnktxcpef/dbstores.shop/V3/admin/order_view.php on line 51
+[23-Feb-2026 19:14:13 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/product_variants.php on line 183
+[23-Feb-2026 19:14:13 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/uwnktxcpef/dbstores.shop/V3/admin/product_variants.php on line 183
+[16-Mar-2026 18:28:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/config.php:11
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/config.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/config.php on line 11
+[18-Mar-2026 18:36:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apm_flash_get() in /home/oizckhtwym/dbstores.shop/admin/_layout_top.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/_layout_top.php on line 2
+[18-Mar-2026 18:36:42 UTC] PHP Warning:  Undefined variable $brands in /home/oizckhtwym/dbstores.shop/admin/_product_form.php on line 21
+[18-Mar-2026 18:36:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home/oizckhtwym/dbstores.shop/admin/_product_form.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/_product_form.php on line 21
+[19-Mar-2026 03:36:45 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/admin_header.php(3): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:36:53 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/auth.php(3): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/brand-delete.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/brand-toggle.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/brands.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:36:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/categories.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/category-delete.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/category-toggle.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/config.php:11
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/config.php(11): mysqli->__construct()
+#1 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/config.php on line 11
+[18-Mar-2026 18:37:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/dashboard.php(4): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:09 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/hero-slider.php(3): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:10 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/highlights.php(6): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:12 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/image_slider.php(3): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/login.php(4): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/login_process.php(2): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/login.php(4): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:20 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/order_update.php(3): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/order_view.php(5): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/orders.php(6): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:25 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/points-adjust.php(1): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:26 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/points.php(1): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/product-delete.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:31 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/product_add.php(5): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:33 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/product_edit.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:34 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/product_variants.php(6): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/products.php(6): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/reward-products.php(3): require_once('/home/oizckhtwy...')
+#2 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:41 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/sale_add.php(6): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:42 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/sale_delete.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:44 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/sale_toggle.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:45 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/sale_view.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:47 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/sales.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/variant-delete.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[19-Mar-2026 03:37:54 Asia/Tokyo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/admin_auth.php(3): require_once('/home/oizckhtwy...')
+#3 /home/oizckhtwym/dbstores.shop/admin/variant_edit.php(2): require_once('/home/oizckhtwy...')
+#4 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19
+[18-Mar-2026 18:37:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'uwnktxcpef_newecommerce'@'localhost' (using password: YES) in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php:19
+Stack trace:
+#0 /home/oizckhtwym/dbstores.shop/admin/adminconfig.php(19): mysqli->__construct()
+#1 /home/oizckhtwym/dbstores.shop/admin/_common.php(15): require_once('/home/oizckhtwy...')
+#2 /home/oizckhtwym/dbstores.shop/admin/variants.php(2): require_once('/home/oizckhtwy...')
+#3 {main}
+  thrown in /home/oizckhtwym/dbstores.shop/admin/adminconfig.php on line 19

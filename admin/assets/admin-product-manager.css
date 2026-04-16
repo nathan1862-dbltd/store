@@ -1,0 +1,25 @@
+:root { --accent:#CC2230; --bg:#0b0c10; --card:#12141a; --muted:#9aa3b2; --line:#222635; }
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0f1117;color:#e8eaf0;margin:0}
+.container{max-width:1100px;margin:20px auto;padding:0 14px}
+.topbar{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}
+.h1{font-size:20px;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:#e8eaf0;padding:9px 12px;border-radius:10px;text-decoration:none;cursor:pointer}
+.btn.primary{border-color:transparent;background:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:12px 10px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle}
+.table th{color:var(--muted);font-weight:600;text-align:left}
+.badge{padding:4px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line);color:var(--muted);display:inline-block}
+.badge.on{border-color:rgba(76,175,80,.35);color:#8be28f}
+.badge.off{border-color:rgba(204,34,48,.35);color:#ff9aa3}
+.row-actions a{color:#cfd6ff;text-decoration:none;margin-right:8px}
+.row-actions a.danger{color:#ff9aa3}
+.thumb{width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--line);background:#0f1117}
+.form{display:grid;gap:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;box-sizing:border-box;background:#0f1117;border:1px solid var(--line);color:#e8eaf0;border-radius:10px;padding:10px 11px}
+textarea{min-height:120px;resize:vertical}
+.help{color:var(--muted);font-size:12px}
+.hr{height:1px;background:var(--line);border:0;margin:14px 0}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}.table th:nth-child(1),.table td:nth-child(1){display:none}}
