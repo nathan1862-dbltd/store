@@ -3,13 +3,11 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/init.php';
-require_once __DIR__ . '/functions.php';
-require_once __DIR__ . '/header.php';
 
 ensureSessionStarted();
 
 if (isset($_SESSION['user_id'])) {
-    header("Location: account.php");
+    header("Location: dashboard.php");
     exit;
 }
 
@@ -56,265 +54,250 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-?> <!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
+<title>Login | Delux Beauti</title>
 
 <style>
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-}
-
+* { box-sizing: border-box; }
 body{
-min-height:100vh;
-display:flex;
-background:linear-gradient(135deg,#0f172a,#1e293b);
+  margin:0;
+  min-height:100vh;
+  font-family: "Inter","Segoe UI",Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(255,255,255,.08), transparent 35%),
+    linear-gradient(145deg, #0f172a, #1e293b 55%, #111827);
+  color:#0f172a;
 }
 
-/* ================= WRAPPER ================= */
-
-.wrapper{
-display:flex;
-flex-direction:column;
-width:100%;
+.login-layout{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns: 1.1fr 1fr;
 }
 
-/* ================= BRAND SIDE ================= */
-
-.brand-side{
-flex:1;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
-padding:40px;
-text-align:center;
+.brand-panel{
+  padding:64px 56px;
+  color:#f8fafc;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border-right:1px solid rgba(255,255,255,.12);
 }
 
-.brand-side h1{
-font-size:32px;
-letter-spacing:1px;
-margin-bottom:15px;
+.brand-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:999px;
 }
 
-.brand-side p{
-opacity:.8;
-font-size:14px;
+.brand-panel h1{
+  font-family: "Times New Roman", serif;
+  font-size:56px;
+  line-height:1.06;
+  margin:20px 0 14px;
 }
 
-/* ================= FORM SIDE ================= */
+.brand-panel p{
+  max-width:440px;
+  color:rgba(248,250,252,.82);
+  line-height:1.75;
+}
 
-.form-side{
-flex:1;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
+.brand-note{
+  font-size:13px;
+  opacity:.75;
+}
+
+.form-panel{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 24px;
 }
 
 .login-card{
-width:100%;
-max-width:420px;
-background:rgba(255,255,255,0.95);
-backdrop-filter:blur(14px);
-border-radius:22px;
-padding:35px 30px;
-box-shadow:0 30px 70px rgba(0,0,0,0.35);
-animation:fadeIn .4s ease;
+  width:min(440px, 100%);
+  background:#ffffff;
+  border-radius:18px;
+  border:1px solid #e2e8f0;
+  box-shadow:0 20px 50px rgba(2,6,23,.18);
+  padding:34px 30px;
 }
 
-.login-card h2{
-text-align:center;
-margin-bottom:25px;
-color:#111827;
+.login-title{
+  margin:0 0 8px;
+  font-size:28px;
+  font-family:"Times New Roman", serif;
+  color:#0f172a;
 }
 
-/* ERROR */
+.login-subtitle{
+  margin:0 0 20px;
+  color:#64748b;
+  font-size:14px;
+}
+
 .error{
-background:#fee2e2;
-color:#991b1b;
-padding:10px 14px;
-border-radius:10px;
-margin-bottom:15px;
-font-size:14px;
+  background:#fff1f2;
+  color:#9f1239;
+  border:1px solid #fecdd3;
+  padding:11px 12px;
+  border-radius:12px;
+  margin-bottom:14px;
+  font-size:14px;
 }
 
-/* FORM */
-.form-group{
-position:relative;
-margin-bottom:16px;
+.field{ margin-bottom:14px; }
+.field label{
+  display:block;
+  margin-bottom:7px;
+  font-size:13px;
+  font-weight:600;
+  color:#334155;
 }
 
-input{
-width:100%;
-padding:14px 15px;
-border-radius:12px;
-border:1px solid #e5e7eb;
-font-size:15px;
-transition:.2s ease;
+.input-wrap{ position:relative; }
+.input-wrap input{
+  width:100%;
+  border:1px solid #cbd5e1;
+  border-radius:12px;
+  padding:12px 14px;
+  font-size:15px;
+  background:#f8fafc;
+  transition:all .18s ease;
 }
 
-input:focus{
-outline:none;
-border-color:#cc2230;
-box-shadow:0 0 0 3px rgba(204,34,48,0.12);
+.input-wrap input:focus{
+  outline:none;
+  border-color:#2563eb;
+  background:#fff;
+  box-shadow:0 0 0 4px rgba(37,99,235,.12);
 }
 
-/* PASSWORD TOGGLE */
 .toggle{
-position:absolute;
-right:12px;
-top:50%;
-transform:translateY(-50%);
-cursor:pointer;
-font-size:13px;
-color:#6b7280;
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  border:0;
+  background:transparent;
+  color:#475569;
+  font-size:12px;
+  font-weight:600;
+  cursor:pointer;
 }
 
-/* BUTTON */
-button{
-width:100%;
-padding:14px;
-border:none;
-border-radius:12px;
-background:#cc2230;
-color:#fff;
-font-weight:600;
-font-size:15px;
-cursor:pointer;
-transition:.2s ease;
+.login-btn{
+  width:100%;
+  margin-top:6px;
+  border:0;
+  border-radius:12px;
+  padding:13px;
+  background:linear-gradient(135deg,#1d4ed8,#1e3a8a);
+  color:#fff;
+  font-weight:600;
+  font-size:15px;
+  cursor:pointer;
+}
+.login-btn:disabled{opacity:.75; cursor:not-allowed;}
+
+.signin-foot{
+  margin-top:16px;
+  text-align:center;
+  color:#64748b;
+  font-size:13px;
+}
+.signin-foot a{
+  color:#1d4ed8;
+  text-decoration:none;
+  font-weight:600;
 }
 
-button:hover{
-background:#a61c27;
-}
-
-button:disabled{
-opacity:.7;
-cursor:not-allowed;
-}
-
-/* FOOTER */
-.footer-text{
-text-align:center;
-margin-top:20px;
-font-size:13px;
-color:#6b7280;
-}
-
-/* ANIMATION */
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(10px)}
-to{opacity:1;transform:translateY(0)}
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:768px){
-
-body{
-flex-direction:column;
-}
-
-.brand-side{
-padding:30px 20px 10px 20px;
-}
-
-.brand-side h1{
-font-size:24px;
-}
-
-}
-
-/* ================= DESKTOP ================= */
-
-@media(min-width:768px){
-
-.wrapper{
-flex-direction:row;
-}
-
-.brand-side{
-background:linear-gradient(135deg,#111827,#1f2937);
-}
-
+@media (max-width: 980px){
+  .login-layout{ grid-template-columns:1fr; }
+  .brand-panel{
+    padding:30px 24px 20px;
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .brand-panel h1{ font-size:34px; }
 }
 </style>
 </head>
 <body>
-
-<div class="wrapper">
-
-    <!-- BRAND PANEL -->
-    <div class="brand-side">
+<div class="login-layout">
+    <aside class="brand-panel">
         <div>
-            <h1>DELUX BEAUTI</h1>
-            <p>Premium Beauty & Skincare Experience</p>
+            <span class="brand-chip">Delux Beauti • Since 2026</span>
+            <h1>Classic care.<br>Modern experience.</h1>
+            <p>Welcome back to your curated beauty store. Sign in to access your saved cart, order history, and personalized recommendations.</p>
         </div>
-    </div>
+        <div class="brand-note">Elegant by tradition, innovative by design.</div>
+    </aside>
 
-    <!-- FORM PANEL -->
-    <div class="form-side">
-
-        <div class="login-card">
-
-            <h2>Account Login</h2>
-
+    <main class="form-panel">
+        <section class="login-card">
+            <h2 class="login-title">Sign in</h2>
+            <p class="login-subtitle">Use your account credentials to continue.</p>
             <?php if($error): ?>
-            <div class="error"><?php echo htmlspecialchars($error); ?></div>
+                <div class="error"><?php echo htmlspecialchars($error); ?></div>
             <?php endif; ?>
 
-            <form method="POST">
-
-                <div class="form-group">
-                    <input type="text" name="username" placeholder="Username" required>
+            <form method="POST" id="loginForm">
+                <div class="field">
+                    <label for="username">Username</label>
+                    <div class="input-wrap">
+                        <input id="username" type="text" name="username" placeholder="Enter your username" required>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <span class="toggle" onclick="togglePassword()">Show</span>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="input-wrap">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <button class="toggle" type="button" onclick="togglePassword()">Show</button>
+                    </div>
                 </div>
 
-                <button type="submit" id="loginBtn">Login</button>
-
+                <button class="login-btn" type="submit" id="loginBtn">Sign in</button>
             </form>
 
-            <div class="footer-text">
-                Secure Access Portal
+            <div class="signin-foot">
+                New here? <a href="register.php">Create an account</a>
             </div>
-
-        </div>
-
-    </div>
-
+        </section>
+    </main>
 </div>
 
 <script>
 function togglePassword(){
-const input=document.getElementById("password");
-const toggle=document.querySelector(".toggle");
-if(input.type==="password"){
-input.type="text";
-toggle.textContent="Hide";
-}else{
-input.type="password";
-toggle.textContent="Show";
-}
+    const input = document.getElementById("password");
+    const toggle = document.querySelector(".toggle");
+    if(input.type==="password"){
+        input.type="text";
+        toggle.textContent="Hide";
+    }else{
+        input.type="password";
+        toggle.textContent="Show";
+    }
 }
 
-document.querySelector("form").addEventListener("submit",function(){
-const btn=document.getElementById("loginBtn");
-btn.textContent="Signing in...";
-btn.disabled=true;
+document.getElementById("loginForm").addEventListener("submit", function(){
+    const btn = document.getElementById("loginBtn");
+    btn.textContent="Signing in...";
+    btn.disabled=true;
 });
 </script>
-
 </body>
 </html>
-<?php require_once __DIR__ . '/footer.php'; ?>
