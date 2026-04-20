@@ -336,4 +336,3 @@ function loyalty_expiring_soon(mysqli $mysqli, int $days = 7): array
 
     return $results;
 }
-

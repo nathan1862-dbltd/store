@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/init.php';
-require_once __DIR__ . '/header.php';
 
 ensureSessionStarted();
 redirectIfNotLoggedIn();
+require_once __DIR__ . '/header.php';
 
 $userId = (int)$_SESSION['user_id'];
 $orderId = (int)($_GET['id'] ?? 0);
