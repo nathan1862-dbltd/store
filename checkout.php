@@ -15,6 +15,24 @@ $userId = (int)$_SESSION['user_id'];
 /* ---------- LOAD STATES ---------- */
 $states = $mysqli->query("SELECT id, name FROM shipping_states WHERE is_active=1 ORDER BY name");
 
+/* ---------- RESOLVE CART ---------- */
+$stmt = $mysqli->prepare("
+    SELECT id
+    FROM carts
+    WHERE user_id = ?
+    LIMIT 1
+");
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$cart = $stmt->get_result()->fetch_assoc();
+$stmt->close();
+
+if (!$cart) {
+    echo "<div class='checkout-page'><h1>Checkout</h1><p>Your cart is empty.</p></div>";
+    require_once __DIR__ . '/footer.php';
+    exit;
+}
+
 /* ===============================
    LOAD CART ITEMS WITH DETAILS
 ================================ */

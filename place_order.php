@@ -3,6 +3,8 @@ require_once __DIR__ . '/init.php';
 
 ensureSessionStarted();
 redirectIfNotLoggedIn();
+csrf_check();
+order_nonce_check();
 
 $mysqli->begin_transaction();
 
@@ -18,6 +20,11 @@ try {
     $full_name   = trim($_POST['full_name'] ?? '');
     $phone       = trim($_POST['phone'] ?? '');
     $address     = trim($_POST['address'] ?? '');
+    $payment_method = trim($_POST['payment_method'] ?? 'cod');
+
+    if (!in_array($payment_method, ['cod', 'bank'], true)) {
+        $payment_method = 'cod';
+    }
 
     if (!$state_id || !$township_id || !$full_name || !$phone || !$address) {
         throw new Exception("Missing required fields.");
@@ -173,12 +180,14 @@ try {
             state_id,
             township_id,
             coupon_code,
+            payment_method,
+            payment_status,
             status
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'processing')
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', 'processing')
     ");
 
     $stmt->bind_param(
-        "isdddsssiiss",
+        "isdddsssiisss",
         $userId,
         $orderNumber,
         $subtotal,
@@ -190,7 +199,8 @@ try {
         $address,
         $state_id,
         $township_id,
-        $coupon_code
+        $coupon_code,
+        $payment_method
     );
 
     $stmt->execute();
