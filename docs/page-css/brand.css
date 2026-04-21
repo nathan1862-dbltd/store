@@ -1,0 +1,29 @@
+/* CSS bundle for brand.php */
+
+/* Inline style block 1 from brand.php */
+.brand-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brand-logo {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+@media(max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

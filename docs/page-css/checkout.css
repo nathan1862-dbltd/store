@@ -1,0 +1,11 @@
+/* CSS bundle for checkout.php */
+
+/* Inline style block 1 from checkout.php */
+.checkout-page{max-width:1000px;margin:auto;padding:20px}
+.checkout-grid{display:grid;grid-template-columns:2fr 1fr;gap:30px}
+.checkout-form input,.checkout-form textarea,.checkout-form select{width:100%;padding:12px;margin-bottom:12px}
+.checkout-btn{width:100%;padding:14px;background:#111;color:#fff;border:none;border-radius:10px}
+.checkout-btn:disabled{opacity:.5;cursor:not-allowed}
+.checkout-summary{background:#fafafa;padding:20px;border-radius:12px}
+.coupon-box,.loyalty-box{background:#fff;border:1px solid #eee;border-radius:12px;padding:12px;margin:12px 0}
+@media(max-width:900px){.checkout-grid{grid-template-columns:1fr}}

@@ -1,0 +1,34 @@
+/* CSS bundle for admin/products.php */
+
+/* Inline style block 1 from admin/products.php */
+body{font-family:Arial, sans-serif;margin:0;background:#f4f6f9;color:#111;}
+    .topbar{background:#111827;color:#fff;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;}
+    .topbar .left{display:flex;flex-direction:column;gap:3px}
+    .topbar .title{font-weight:700}
+    .topbar .meta{font-size:12px;opacity:.85}
+    .topbar a{color:#93c5fd;text-decoration:none;font-size:13px}
+    .wrap{padding:16px;max-width:1100px;margin:0 auto;}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .search{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .search input{padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;min-width:240px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:8px;border:0;cursor:pointer;text-decoration:none;font-size:14px}
+    .btn-primary{background:#111827;color:#fff}
+    .btn-soft{background:#e5e7eb;color:#111}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+    .card .img{height:140px;background:#f3f4f6;display:flex;align-items:center;justify-content:center}
+    .card .img img{max-height:140px;max-width:100%;object-fit:contain}
+    .card .body{padding:12px}
+    .row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+    .name{font-weight:700;margin:0 0 6px}
+    .muted{color:#6b7280;font-size:12px}
+    .pill{font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #e5e7eb;background:#f9fafb}
+    .pill.on{background:#dcfce7;border-color:#bbf7d0}
+    .pill.off{background:#fee2e2;border-color:#fecaca}
+    .price{font-weight:700}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .actions a{font-size:13px}
+    .pager{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+    .pager a{padding:8px 10px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;text-decoration:none;color:#111}
+    .pager .active{background:#111827;color:#fff;border-color:#111827}
+    .empty{background:#fff;border:1px dashed #d1d5db;border-radius:12px;padding:18px;text-align:center;color:#6b7280}

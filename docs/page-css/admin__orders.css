@@ -1,0 +1,149 @@
+/* CSS bundle for admin/orders.php */
+
+/* Inline style block 1 from admin/orders.php */
+*{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:#f3f4f6}
+
+/* TOPBAR */
+.topbar{
+background:#111827;
+color:#fff;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-weight:600;
+}
+
+.topbar a{color:#93c5fd;text-decoration:none;margin-left:10px}
+
+/* WRAPPER */
+.wrap{padding:16px;max-width:1100px;margin:auto}
+
+/* KPI CARDS */
+.kpi-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:12px;
+margin-bottom:20px;
+}
+
+.kpi{
+background:#fff;
+padding:16px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+.kpi h4{margin:0;font-size:13px;color:#6b7280;text-transform:uppercase}
+.kpi p{margin:6px 0 0;font-size:22px;font-weight:bold}
+
+/* FILTERS */
+.filters{
+background:#fff;
+padding:14px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:20px;
+}
+
+input,select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+button{
+padding:10px 14px;
+border:none;
+border-radius:8px;
+background:#111827;
+color:#fff;
+cursor:pointer;
+font-weight:500;
+}
+
+/* ORDER CARD */
+.order-card{
+background:#fff;
+padding:16px;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.muted{color:#6b7280;font-size:13px}
+
+/* STATUS BADGES */
+.badge{
+padding:5px 10px;
+border-radius:999px;
+font-size:12px;
+font-weight:500;
+display:inline-block;
+}
+
+.pending{background:#fef3c7}
+.processing{background:#bfdbfe}
+.shipped{background:#c7d2fe}
+.delivered{background:#bbf7d0}
+.cancelled{background:#fecaca}
+
+.payment-paid{color:#16a34a;font-weight:600}
+.payment-unpaid{color:#dc2626;font-weight:600}
+
+/* ACTION BUTTONS */
+.actions{
+margin-top:10px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:8px 12px;
+border-radius:8px;
+font-size:13px;
+text-decoration:none;
+background:#111827;
+color:#fff;
+}
+
+.btn.secondary{background:#374151}
+
+/* PAGINATION */
+.pagination{
+display:flex;
+gap:6px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.page-link{
+padding:6px 10px;
+border-radius:6px;
+background:#e5e7eb;
+text-decoration:none;
+color:#111;
+font-size:13px;
+}
+
+.page-link.active{
+background:#111827;
+color:#fff;
+}
+
+@media(min-width:768px){
+.kpi-grid{grid-template-columns:1fr 1fr}
+}

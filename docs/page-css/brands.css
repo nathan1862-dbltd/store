@@ -1,0 +1,84 @@
+/* CSS bundle for brands.php */
+
+/* Inline style block 1 from brands.php */
+.brand-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.brand-page-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* A–Z Nav */
+.az-nav {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.az-nav a,
+.az-nav span {
+    display: inline-block;
+    margin: 4px 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #111;
+}
+
+.az-nav a:hover {
+    text-decoration: underline;
+}
+
+.az-disabled {
+    color: #ccc;
+}
+
+/* Brand Section */
+.brand-group {
+    margin-bottom: 40px;
+}
+
+.brand-letter {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.brand-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 14px;
+}
+
+/* Brand List */
+.brand-list {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+}
+
+@media (min-width: 768px) {
+    .brand-list { columns: 3; }
+}
+
+@media (min-width: 1024px) {
+    .brand-list { columns: 4; }
+}
+
+.brand-list li {
+    margin-bottom: 8px;
+}
+
+.brand-list a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+.brand-list a:hover {
+    text-decoration: underline;
+}

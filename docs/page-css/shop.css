@@ -1,0 +1,64 @@
+/* CSS bundle for shop.php */
+
+/* Inline style block 1 from shop.php */
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f7f7f7;
+}
+
+/* Header */
+.shop-header{
+  padding:16px;
+  font-size:20px;
+  font-weight:700;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+/* List */
+.category-list{padding:12px}
+
+/* Item */
+.category-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+  background:#fff;
+  border-radius:14px;
+  margin-bottom:10px;
+  text-decoration:none;
+  color:#222;
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+}
+
+/* Icon container */
+.category-icon{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.category-icon svg{
+  width:40px;
+  height:40px;
+}
+
+/* Name */
+.category-name{
+  font-size:15px;
+  font-weight:600;
+}
+
+/* Arrow */
+.category-arrow{
+  margin-left:auto;
+  font-size:18px;
+  color:#aaa;
+}
