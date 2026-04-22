@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login | Delux Beauti</title>
+<link rel="stylesheet" href="/assets/css/storefront-main.css">
 
 <style>
 * { box-sizing: border-box; }
@@ -247,7 +248,7 @@ body{
     </aside>
 
     <main class="form-panel">
-        <section class="login-card">
+        <section class="login-card card">
             <h2 class="login-title">Sign in</h2>
             <p class="login-subtitle">Use your account credentials to continue.</p>
             <?php if($error): ?>
@@ -258,19 +259,19 @@ body{
                 <div class="field">
                     <label for="username">Username</label>
                     <div class="input-wrap">
-                        <input id="username" type="text" name="username" placeholder="Enter your username" required>
+                        <input id="username" class="input" type="text" name="username" placeholder="Enter your username" required>
                     </div>
                 </div>
 
                 <div class="field">
                     <label for="password">Password</label>
                     <div class="input-wrap">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <input type="password" id="password" class="input" name="password" placeholder="Enter your password" required>
                         <button class="toggle" type="button" onclick="togglePassword()">Show</button>
                     </div>
                 </div>
 
-                <button class="login-btn" type="submit" id="loginBtn">Sign in</button>
+                <button class="login-btn btn btn-primary full" type="submit" id="loginBtn">Sign in</button>
             </form>
 
             <div class="signin-foot">

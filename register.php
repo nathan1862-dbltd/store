@@ -182,7 +182,7 @@ include __DIR__ . '/header.php';
 </style>
 
 <div class="auth-register">
-    <div class="register-card">
+    <div class="register-card card">
         <h2 class="register-heading">Create account</h2>
         <p class="register-sub">Join Delux Beauti for a timeless and personalized shopping experience.</p>
 
@@ -193,25 +193,25 @@ include __DIR__ . '/header.php';
         <form method="post">
             <div class="auth-field">
                 <label>Username</label>
-                <input type="text" name="username" placeholder="Choose a username" required>
+                <input class="input" type="text" name="username" placeholder="Choose a username" required>
             </div>
 
             <div class="auth-field">
                 <label>Phone Number</label>
-                <input type="tel" name="phone" placeholder="09xxxxxxxx" required>
+                <input class="input" type="tel" name="phone" placeholder="09xxxxxxxx" required>
             </div>
 
             <div class="auth-field">
                 <label>Birthday</label>
-                <input type="date" name="birthday" required>
+                <input class="input" type="date" name="birthday" required>
             </div>
 
             <div class="auth-field">
                 <label>Password</label>
-                <input type="password" name="password" placeholder="Minimum 6 characters" required>
+                <input class="input" type="password" name="password" placeholder="Minimum 6 characters" required>
             </div>
 
-            <button type="submit" class="register-btn">Create account</button>
+            <button type="submit" class="register-btn btn btn-primary full">Create account</button>
         </form>
 
         <p class="signup-text">

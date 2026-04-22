@@ -43,13 +43,10 @@ if ($cart) {
 <title>DB Stores</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="/assets/css/storefront-main.css">
 <link rel="stylesheet" href="components/product-sliders/product-slider.css">
 
 <style>
-/* RESET */
-* { box-sizing: border-box; margin:0; padding:0; }
-body { font-family: Arial, Helvetica, sans-serif; }
-
 /* STICKY HEADER */
 .site-header {
   position: sticky;
@@ -90,8 +87,6 @@ body { font-family: Arial, Helvetica, sans-serif; }
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 0.95em;
-}
-
 }
 .search-results{
   position:absolute;top:110%;left:0;right:0;
