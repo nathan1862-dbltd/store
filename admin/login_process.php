@@ -4,7 +4,6 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
 require_once __DIR__ . '/adminconfig.php';
 require_once __DIR__ . '/auth.php';
 
-Session::start();
 
 $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 $password = $_POST['password'] ?? '';
