@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL); 
-
 require_once __DIR__ . '/../auth/Auth.php';
 
 Session::start();
@@ -18,7 +16,7 @@ if (Auth::login($username, $password)) {
     header("Location: dashboard.php");
     exit;
 } else {
-    $_SESSION['error'] = "Invalid username or password";
+    $_SESSION['error'] = "Invalid credentials or not authorized";
     header("Location: login.php");
     exit;
 }
