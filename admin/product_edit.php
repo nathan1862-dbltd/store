@@ -30,7 +30,7 @@ $product = [
    FETCH PRODUCT (EDIT MODE)
 ========================= */
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-    $stmt = $conn->prepare("SELECT * FROM products WHERE id = ?");
+    $stmt = $mysqli->prepare("SELECT * FROM products WHERE id = ?");
     $stmt->bind_param("i", $_GET['id']);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -44,7 +44,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
    FETCH CATEGORIES
 ========================= */
 $categories = [];
-$res = $conn->query("SELECT id, name FROM categories WHERE parent_id = 0");
+$res = $mysqli->query("SELECT id, name FROM categories WHERE parent_id = 0");
 while ($row = $res->fetch_assoc()) {
     $categories[] = $row;
 }
@@ -53,7 +53,7 @@ while ($row = $res->fetch_assoc()) {
    FETCH SUBCATEGORIES
 ========================= */
 $subcategories = [];
-$res = $conn->query("SELECT id, name, parent_id FROM categories WHERE parent_id != 0");
+$res = $mysqli->query("SELECT id, name, parent_id FROM categories WHERE parent_id != 0");
 while ($row = $res->fetch_assoc()) {
     $subcategories[$row['parent_id']][] = $row;
 }
