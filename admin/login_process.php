@@ -1,29 +1,22 @@
 <?php
-ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
+require_once __DIR__ . '/../auth/Auth.php';
 
-require_once __DIR__ . '/adminconfig.php';
-require_once __DIR__ . '/auth.php';
+Session::start();
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ' . ADMIN_LOGIN_PAGE);
-    exit;
-}
-
-$usernameInput = filter_input(INPUT_POST, 'username', FILTER_DEFAULT);
-$username = is_string($usernameInput) ? trim($usernameInput) : '';
+$username = trim($_POST['username'] ?? '');
 $password = $_POST['password'] ?? '';
 
-if ($username === '' || $password === '') {
-    $_SESSION['error'] = 'Invalid input';
-    header('Location: ' . ADMIN_LOGIN_PAGE);
+if (empty($username) || empty($password)) {
+    $_SESSION['error'] = "Invalid input";
+    header("Location: login.php");
     exit;
 }
 
 if (Auth::login($username, $password)) {
-    header('Location: ' . ADMIN_DASHBOARD_PAGE);
+    header("Location: dashboard.php");
+    exit;
+} else {
+    $_SESSION['error'] = "Invalid username or password";
+    header("Location: login.php");
     exit;
 }
-
-$_SESSION['error'] = 'Invalid credentials';
-header('Location: ' . ADMIN_LOGIN_PAGE);
-exit;
