@@ -221,7 +221,7 @@ function h($s) { return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
             </div>
 
             <div class="actions">
-              <a class="btn btn-soft" href="product-edit.php?id=<?php echo (int)$p['id']; ?>">Edit</a>
+              <a class="btn btn-soft" href="product_edit.php?id=<?php echo (int)$p['id']; ?>">Edit</a>
               <a class="btn btn-soft" href="product_variants.php?product_id=<?php echo (int)$p['id']; ?>">Variants</a>
               <a class="btn btn-soft" href="highlights.php?product_id=<?php echo (int)$p['id']; ?>">Highlights</a>
               <a class="btn btn-soft" href="product-delete.php?id=<?php echo (int)$p['id']; ?>"
