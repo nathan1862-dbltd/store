@@ -7,7 +7,7 @@ function uploadImage($file, $subdir = 'products') {
     if (empty($file['name'])) return null;
     if (!is_uploaded_file($file['tmp_name'])) return null;
 
-    $baseDir = __DIR__ . '/../uploads/' . $subdir . '/';
+    $baseDir = __DIR__ . '/../assets/uploads/' . $subdir . '/';
     if (!is_dir($baseDir)) mkdir($baseDir, 0777, true);
 
     $safeName = preg_replace('/[^a-zA-Z0-9\._-]/', '_', basename($file['name']));
