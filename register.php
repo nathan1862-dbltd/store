@@ -83,141 +83,105 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $pageTitle = "Register";
 include __DIR__ . '/header.php';
 ?>
+<div class="login-layout">
+   <!-- RIGHT FORM PANEL -->
 
-<style>
-.bottom-nav{display:none}
-.auth-register{
-    min-height: calc(100vh - 150px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:40px 16px 56px;
-    background:
-      radial-gradient(circle at 18% 20%, rgba(37,99,235,.14), transparent 35%),
-      radial-gradient(circle at 85% 8%, rgba(30,64,175,.1), transparent 36%),
-      #f8fafc;
-}
+    <div class="form-panel">
 
-.register-card{
-    width:min(460px,100%);
-    background:#fff;
-    border:1px solid #dbe3ef;
-    border-radius:18px;
-    box-shadow:0 14px 40px rgba(15,23,42,.08);
-    padding:30px 28px;
-}
+        <div class="login-card">
 
-.register-heading{
-    margin:0;
-    font-family:"Times New Roman",serif;
-    font-size:30px;
-    color:#0f172a;
-    text-align:center;
-}
+            <h2 class="login-title">Create account</h2>
 
-.register-sub{
-    text-align:center;
-    margin:8px 0 22px;
-    color:#64748b;
-    font-size:14px;
-}
+            <p class="login-subtitle">
 
-.error{
-    background:#fff1f2;
-    color:#9f1239;
-    border:1px solid #fecdd3;
-    padding:10px 12px;
-    border-radius:10px;
-    margin-bottom:10px;
-    font-size:14px;
-}
+                Join Delux Beauti for a personalized experience.
 
-.auth-field{ margin-bottom:14px; }
-.auth-field label{
-    display:block;
-    margin-bottom:6px;
-    font-size:13px;
-    font-weight:600;
-    color:#334155;
-}
-.auth-field input{
-    width:100%;
-    border:1px solid #cbd5e1;
-    border-radius:11px;
-    padding:12px 13px;
-    font-size:14px;
-    background:#f8fafc;
-}
-.auth-field input:focus{
-    outline:none;
-    border-color:#2563eb;
-    box-shadow:0 0 0 4px rgba(37,99,235,.12);
-    background:#fff;
-}
+            </p>
 
-.register-btn{
-    width:100%;
-    margin-top:4px;
-    border:0;
-    border-radius:12px;
-    padding:13px;
-    font-size:15px;
-    font-weight:600;
-    color:#fff;
-    background:linear-gradient(135deg,#1d4ed8,#1e3a8a);
-    cursor:pointer;
-}
+            <?php foreach ($errors as $e): ?>
 
-.signup-text {
-    text-align:center;
-    margin-top:16px;
-    color:#64748b;
-    font-size:14px;
-}
-.signup-link {
-    color:#1d4ed8;
-    font-weight:700;
-    text-decoration:none;
-}
-</style>
+                <div class="error"><?php echo e($e); ?></div>
 
-<div class="auth-register">
-    <div class="register-card card">
-        <h2 class="register-heading">Create account</h2>
-        <p class="register-sub">Join Delux Beauti for a timeless and personalized shopping experience.</p>
+            <?php endforeach; ?>
 
-        <?php foreach ($errors as $e): ?>
-            <div class="error"><?php echo e($e); ?></div>
-        <?php endforeach; ?>
+            <form method="post">
 
-        <form method="post">
-            <div class="auth-field">
-                <label>Username</label>
-                <input class="input" type="text" name="username" placeholder="Choose a username" required>
-            </div>
+                <!-- USERNAME -->
 
-            <div class="auth-field">
-                <label>Phone Number</label>
-                <input class="input" type="tel" name="phone" placeholder="09xxxxxxxx" required>
-            </div>
+                <div class="field">
 
-            <div class="auth-field">
-                <label>Birthday</label>
-                <input class="input" type="date" name="birthday" required>
-            </div>
+                    <label>Username</label>
 
-            <div class="auth-field">
-                <label>Password</label>
-                <input class="input" type="password" name="password" placeholder="Minimum 6 characters" required>
-            </div>
+                    <div class="input-wrap">
 
-            <button type="submit" class="register-btn btn btn-primary full">Create account</button>
-        </form>
+                        <input type="text" name="username" required>
 
-        <p class="signup-text">
-            Already have an account?
-            <a href="login.php" class="signup-link">Login</a>
-        </p>
+                    </div>
+
+                </div>
+
+                <!-- PHONE -->
+
+                <div class="field">
+
+                    <label>Phone Number</label>
+
+                    <div class="input-wrap">
+
+                        <input type="tel" name="phone" placeholder="09xxxxxxxx" required>
+
+                    </div>
+
+                </div>
+
+                <!-- BIRTHDAY -->
+
+                <div class="field">
+
+                    <label>Birthday</label>
+
+                    <div class="input-wrap">
+
+                        <input type="date" name="birthday" required>
+
+                    </div>
+
+                </div>
+
+                <!-- PASSWORD -->
+
+                <div class="field">
+
+                    <label>Password</label>
+
+                    <div class="input-wrap">
+
+                        <input type="password" name="password" id="password" required>
+
+                        <button type="button" class="toggle" onclick="togglePassword()">Show</button>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="login-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <p class="signin-foot">
+
+                Already have an account?
+
+                <a href="login.php">Login</a>
+
+            </p>
+
+        </div>
+
     </div>
 </div>
 
