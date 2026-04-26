@@ -16,7 +16,7 @@ if (empty($_SESSION['csrf_token'])) {
 /* =========================
    DB CONNECTION
 ========================= */
-
+$mysqli=$conn
 
 $product = [
     'id' => '',
