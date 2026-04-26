@@ -57,7 +57,7 @@ class Auth
 function requireAuth(string $requiredRole = 'admin'): void
 {
     if (empty($_SESSION['user_id']) || empty($_SESSION['role'])) {
-        header('Location: /admin/login.php');
+        header('Location: ' . ADMIN_LOGIN_PAGE);
         exit;
     }
 

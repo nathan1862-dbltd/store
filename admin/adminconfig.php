@@ -33,10 +33,10 @@ if ($mysqli->connect_error) {
     die("Admin DB Connection Failed: " . $mysqli->connect_error);
 }
 
-$mysqli->set_charset("utf8mb4");
+$mysqli->set_charset('utf8mb4');
 
 /* ADMIN SETTINGS */
 define('ADMIN_PANEL_NAME', 'Delux Beauti Admin');
 define('ADMIN_SESSION_KEY', 'admin_id');
-define('ADMIN_LOGIN_PAGE', '/V3/admin/login.php');
-define('ADMIN_DASHBOARD_PAGE', '/V3/admin/dashboard.php');
+define('ADMIN_LOGIN_PAGE', '/admin/login.php');
+define('ADMIN_DASHBOARD_PAGE', '/admin/dashboard.php');
