@@ -16,7 +16,7 @@ if (empty($_SESSION['csrf_token'])) {
 /* =========================
    DB CONNECTION
 ========================= */
-$conn = $db; // assuming $db from config
+
 
 $product = [
     'id' => '',
