@@ -10,9 +10,9 @@
 
 define('DB_HOST', 'localhost');
 // Updated database credentials per user instructions
-define('DB_USER', 'oizckhtwym_loyalty');
-define('DB_PASS', 'oizckhtwym_loyalty');
-define('DB_NAME', 'oizckhtwym_ecom');
+define('DB_USER', 'riusfnxmti_admin');
+define('DB_PASS', 'riusfnxmti_admin');
+define('DB_NAME', 'riusfnxmti_ecommerce');
 
 
 // Establish a connection when this file is included.  If the
