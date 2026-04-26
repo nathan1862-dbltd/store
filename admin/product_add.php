@@ -42,7 +42,7 @@ function uploadImage($file, $subdir = 'products') {
 
     if ($file['size'] > 5 * 1024 * 1024) return null; // 5MB limit
 
-    $baseDir = __DIR__ . '/../uploads/' . $subdir . '/';
+    $baseDir = __DIR__ . '/../assets/uploads/' . $subdir . '/';
     if (!is_dir($baseDir)) mkdir($baseDir, 0777, true);
 
     $safeName = preg_replace('/[^a-zA-Z0-9\._-]/', '_', basename($file['name']));
