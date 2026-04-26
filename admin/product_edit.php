@@ -137,9 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         $ph->close();
     }
-
-    header("Location: products.php");
-    exit;
 }
 ?>
 
