@@ -22,18 +22,18 @@ define('ADMIN_DB_USER', 'riusfnxmti_admin');
 define('ADMIN_DB_PASS', 'riusfnxmti_admin');
 define('ADMIN_DB_NAME', 'riusfnxmti_ecommerce');
 
-$mysqli = new mysqli(
+$conn = new mysqli(
     ADMIN_DB_HOST,
     ADMIN_DB_USER,
     ADMIN_DB_PASS,
     ADMIN_DB_NAME
 );
 
-if ($mysqli->connect_error) {
+if ($conn->connect_error) {
     die("Admin DB Connection Failed: " . $mysqli->connect_error);
 }
 
-$mysqli->set_charset('utf8mb4');
+$conn->set_charset('utf8mb4');
 
 /* ADMIN SETTINGS */
 define('ADMIN_PANEL_NAME', 'Delux Beauti Admin');
