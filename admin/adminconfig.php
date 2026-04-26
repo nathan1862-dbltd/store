@@ -18,9 +18,9 @@ if (session_status() === PHP_SESSION_NONE) {
 
 /* DATABASE CONFIG */
 define('ADMIN_DB_HOST', 'localhost');
-define('ADMIN_DB_USER', 'uwnktxcpef_newecommerce');
-define('ADMIN_DB_PASS', 'uwnktxcpef_newecommerce');
-define('ADMIN_DB_NAME', 'uwnktxcpef_newecommerce');
+define('ADMIN_DB_USER', 'riusfnxmti_admin');
+define('ADMIN_DB_PASS', 'riusfnxmti_admin');
+define('ADMIN_DB_NAME', 'riusfnxmti_ecommerce');
 
 $mysqli = new mysqli(
     ADMIN_DB_HOST,
