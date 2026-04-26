@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/auth.php';
+require_once __DIR__ . '/_common.php';
 
 $username = trim($_POST['username'] ?? '');
 $password = (string) ($_POST['password'] ?? '');
