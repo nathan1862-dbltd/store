@@ -91,7 +91,7 @@
   </div>
 </footer>
 
-<?php include __DIR__ . '/components/bottom-menu/bottom-menu.html'; ?>
+<?php include __DIR__ . '/mobile-bottom-menu.php'; ?>
 
 <!-- ================= STYLES ================= -->
 <style>
@@ -301,7 +301,7 @@ function slide(id, dir) {
 }
 
 </script>
-<script src="/components/bottom-menu/bottom-menu..js"></script>
+
 
 
 <script src="assets/js/slider.js"></script>
