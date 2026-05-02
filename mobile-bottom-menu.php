@@ -1,117 +1,190 @@
-<!-- ================= MOBILE BOTTOM STICKY MENU ================= -->
-<nav class="mobile-bottom-menu">
+<!-- BOTTOM MENU -->
+<div class="bottom-nav-wrapper">
 
-  <!-- Home -->
-  <a href="index.php" class="menu-item">
-    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg>
-    <span>Home</span>
-  </a>
+    <div class="bottom-nav">
 
-  <!-- Shop -->
-  <a href="javascript:void(0)" class="menu-item" onclick="openShopSheet()">
-    <svg viewBox="0 0 640 640"><path fill="currentColor" d="M94.7 136.3C101.6 112.4 123.5 96 148.4 96L492.4 96C517.3 96 539.2 112.4 546.2 136.3L569.6 216.5C582.4 260.2 549.5 304 504 304C477.7 304 454.6 289.1 443.2 266.9C431.6 288.8 408.6 304 381.8 304C355.2 304 332.1 289 320.5 267C308.9 289 285.8 304 259.2 304C232.4 304 209.4 288.9 197.8 266.9C186.4 289 163.3 304 137 304C91.4 304 58.6 260.3 71.4 216.5L94.7 136.3zM160.4 416L480.4 416L480.4 349.6C488 351.2 495.9 352 503.9 352C518.2 352 531.9 349.4 544.4 344.8L544.4 496C544.4 522.5 522.9 544 496.4 544L144.4 544C117.9 544 96.4 522.5 96.4 496L96.4 344.8C108.9 349.4 122.5 352 136.9 352C145 352 152.8 351.2 160.4 349.6L160.4 416z"/></svg>
-    <span>Shop</span>
-  </a>
+        <!-- HOME -->
+        <a href="index.php"
+           class="nav-item <?= ($current_page == 'index.php') ? 'active' : ''; ?>">
 
-  <!-- Cart -->
-  <a href="cart.php" class="menu-item cart-link">
-    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M192 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM448 384a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM438.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-384 384c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l384-384z"/></svg>
-    <span>Cart</span>
-    <span class="cart-count-bubble">
-      <?php echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; ?>
-    </span>
-  </a>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
 
-  <!-- Account -->
-  <a href="dashboard.php" class="menu-item">
-    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg>
-    <span>Account</span>
-  </a>
-  
-  <!-- AI SKIN ANALYSIS -->
-  <a href="beauty-ai/chat.html" class="menu-item">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="currentColor" d="M64 416L64 192C64 139 107 96 160 96L480 96C533 96 576 139 576 192L576 416C576 469 533 512 480 512L360 512C354.8 512 349.8 513.7 345.6 516.8L230.4 603.2C226.2 606.3 221.2 608 216 608C202.7 608 192 597.3 192 584L192 512L160 512C107 512 64 469 64 416z"/></svg>
-    <span>Account</span>
-  </a>
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+            </svg>
 
-</nav>
+        </a>
 
-<!-- ================= SHOP SLIDE-UP SHEET ================= -->
-<div id="shopSheetOverlay" class="shop-sheet-overlay">
-  <div class="shop-sheet-panel">
-    <button class="shop-sheet-close" onclick="closeShopSheet()">✕</button>
-    <iframe src="categories.php" class="shop-sheet-frame"></iframe>
-  </div>
+        <!-- SHOP -->
+        <a href="shop.php"
+           class="nav-item <?= ($current_page == 'shop.php') ? 'active' : ''; ?>">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4"/>
+            </svg>
+
+        </a>
+
+        <!-- ADD -->
+        <a href="add.php"
+           class="nav-item <?= ($current_page == 'add.php') ? 'active' : ''; ?>">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"/>
+            </svg>
+
+        </a>
+
+        <!-- SETTINGS -->
+        <a href="settings.php"
+           class="nav-item <?= ($current_page == 'settings.php') ? 'active' : ''; ?>">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+
+                <path stroke-linecap="round"
+                      stroke-width="2"
+                      d="M6 4v10m0 0a2 2 0 1 0 0 4"/>
+            </svg>
+
+        </a>
+
+        <!-- PROFILE -->
+        <a href="profile.php"
+           class="nav-item <?= ($current_page == 'profile.php') ? 'active' : ''; ?>">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 21a9 9 0 1 0 0-18"/>
+            </svg>
+
+        </a>
+
+    </div>
+
 </div>
 
 <style>
-.mobile-bottom-menu{display:none}
-@media(max-width:768px){
-  .mobile-bottom-menu{
-    position:fixed;bottom:0;left:0;width:100%;height:64px;
-    background:#fff;border-top:1px solid #eee;
-    display:flex;justify-content:space-around;align-items:center;
-    z-index:9999;
-  }
-  .menu-item{flex:1;text-align:center;text-decoration:none;color:#555;font-size:11px;position:relative}
-  .menu-item svg{width:22px;height:22px;display:block;margin:auto auto 4px}
-  .cart-count-bubble{
-    position:absolute;top:4px;right:30%;
-    background:#e60023;color:#fff;font-size:10px;
-    padding:2px 6px;border-radius:12px;font-weight:bold
-  }
-  body{padding-bottom:70px}
 
-  /* Move Chatbase widget above bottom menu */
-  iframe[src*="chatbase"] {
-    bottom: 80px !important;
-    z-index: 99999 !important;
-  }
+.bottom-nav-wrapper{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
+    max-width:420px;
+    padding:0 16px;
+    z-index:999;
 }
 
-/* ================= SHOP SLIDE-UP ================= */
-.shop-sheet-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.45);
-  display:none;
-  z-index:10000;
+.bottom-nav{
+    height:74px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,0.72);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,0.45);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.06),
+        inset 0 1px 0 rgba(255,255,255,0.6);
 }
 
-.shop-sheet-overlay.active{
-  display:block;
+.nav-item{
+    width:50px;
+    height:50px;
+
+    border-radius:999px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#71717a;
+
+    transition:0.25s ease;
+
+    text-decoration:none;
 }
 
-.shop-sheet-panel{
-  position:absolute;
-  bottom:-100%;
-  left:0;
-  width:100%;
-  height:90%;
-  background:#fff;
-  border-radius:18px 18px 0 0;
-  transition:bottom .35s ease;
-  overflow:hidden;
+.nav-item svg{
+    width:24px;
+    height:24px;
 }
 
-.shop-sheet-overlay.active .shop-sheet-panel{
-  bottom:0;
+.nav-item:hover{
+    transform:translateY(-3px);
 }
 
-.shop-sheet-frame{
-  width:100%;
-  height:100%;
-  border:0;
+.nav-item.active{
+    background:#6b7280;
+    color:#ffffff;
+
+    box-shadow:
+        0 10px 20px rgba(107,114,128,0.30);
 }
 
-.shop-sheet-close{
-  position:absolute;
-  top:10px;
-  right:16px;
-  background:none;
-  border:0;
-  font-size:20px;
-  z-index:5;
-  cursor:pointer;
+body{
+    padding-bottom:120px;
 }
+
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+
+        item.addEventListener('click', () => {
+
+            navItems.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            item.classList.add('active');
+
+        });
+
+    });
+
+});
+
+</script>
