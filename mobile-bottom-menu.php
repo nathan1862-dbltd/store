@@ -140,7 +140,7 @@ body{
 /* ACTIVE */
 
 .nav-item.active{
-    background:#6b7280;
+    background:#000;
 
     color:#ffffff;
 
