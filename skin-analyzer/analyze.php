@@ -22,7 +22,7 @@ $imageData = base64_encode(file_get_contents($targetFile));
 $apiKey = "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";
 
 $data = [
-    "model" => "meta-llama/llama-3.2-11b-vision-instruct:free",
+    "model" => "openrouter/free",
     "messages" => [
         [
             "role" => "user",
