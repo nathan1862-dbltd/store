@@ -1,129 +1,68 @@
 <?php
-
 header('Content-Type: text/html');
 
-if (!isset($_FILES['image'])) {
-    die('<div class="result-card">No image uploaded.</div>');
+if (!isset($_FILES['image']) || $_FILES['image']['error'] !== UPLOAD_ERR_OK) {
+    die('<p style="color:red">No image uploaded or upload error.</p>');
 }
 
-$uploadDir = "uploads/";
+// Get uploaded image
+$imageFile = $_FILES['image']['tmp_name'];
+$imageData = base64_encode(file_get_contents($imageFile));
+$mimeType = mime_content_type($imageFile); // e.g., image/jpeg, image/png
 
-if (!is_dir($uploadDir)) {
-    mkdir($uploadDir, 0777, true);
-}
+// Your OpenRouter API key – replace with your actual key
+$apiKey = "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"; // REPLACE THIS
 
-$fileName = time() . "_" . basename($_FILES["image"]["name"]);
-$targetFile = $uploadDir . $fileName;
-
-if (!move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
-    die('<div class="result-card">Image upload failed.</div>');
-}
-
-$imageType = mime_content_type($targetFile);
-$imageData = base64_encode(file_get_contents($targetFile));
-
-$apiKey = "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";
-
+// Prepare the correct multimodal payload for OpenRouter
 $payload = [
-    "model" => "openrouter/free",
+    "model" => "google/gemma-3-27b-it:free",
     "messages" => [
         [
             "role" => "user",
             "content" => [
                 [
                     "type" => "text",
-                    "text" => "Analyze this facial skin image and return professional HTML only.
-
-Include:
-- Skin Type
-- Acne
-- Pores
-- Pigmentation
-- Dark Circles
-- Hydration
-- Texture
-- Fine Lines
-- Skin Health Score (/10)
-
-Then provide skincare recommendations."
+                    "text" => "Analyze this skin image professionally. Describe skin condition, concerns, and general recommendations. Be concise but informative."
                 ],
                 [
                     "type" => "image_url",
                     "image_url" => [
-                        "url" => "data:$imageType;base64,$imageData"
+                        "url" => "data:$mimeType;base64,$imageData"
                     ]
                 ]
             ]
         ]
-    ],
-    "max_tokens" => 800
+    ]
 ];
 
 $ch = curl_init();
-
 curl_setopt_array($ch, [
     CURLOPT_URL => "https://openrouter.ai/api/v1/chat/completions",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
-    CURLOPT_TIMEOUT => 120,
     CURLOPT_HTTPHEADER => [
-        "Authorization: Bearer " . $apiKey,
-        "Content-Type: application/json",
-        "HTTP-Referer: https://thebizportwebs.online/skin-analyzer/",
-        "X-Title: Skin Analyzer"
+        "Authorization: Bearer $apiKey",
+        "Content-Type: application/json"
     ],
     CURLOPT_POSTFIELDS => json_encode($payload)
 ]);
 
 $response = curl_exec($ch);
-
-if (curl_errno($ch)) {
-
-    echo '
-    <div class="result-card">
-        <h3>cURL Error</h3>
-        <p>' . curl_error($ch) . '</p>
-    </div>';
-
-    curl_close($ch);
-    exit;
-}
-
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
 curl_close($ch);
 
-$result = json_decode($response, true);
-
-if ($httpCode != 200) {
-
-    echo '
-    <div class="result-card">
-        <h3>API Error</h3>
-        <pre>' . htmlspecialchars($response) . '</pre>
-    </div>';
-
+if ($response === false) {
+    echo '<p style="color:red">cURL error: ' . curl_error($ch) . '</p>';
     exit;
 }
 
-if (isset($result['choices'][0]['message']['content'])) {
+$decoded = json_decode($response, true);
 
-    echo '
-    <div class="result-card">
-        <h3>Skin Analysis Result</h3>
-        ' . $result['choices'][0]['message']['content'] . '
-    </div>';
-
+if ($httpCode === 200 && isset($decoded['choices'][0]['message']['content'])) {
+    $analysis = nl2br(htmlspecialchars($decoded['choices'][0]['message']['content']));
+    echo "<div><strong>Analysis Result:</strong><br>$analysis</div>";
 } else {
-
-    echo '
-    <div class="result-card">
-        <h3>Unexpected Response</h3>
-        <pre>' . htmlspecialchars($response) . '</pre>
-    </div>';
-}
-
-if (file_exists($targetFile)) {
-    unlink($targetFile);
+    $errorMsg = $decoded['error']['message'] ?? 'Unknown API error';
+    echo "<p style='color:red'>API Error (HTTP $httpCode): $errorMsg</p>";
 }
 ?>
