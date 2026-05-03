@@ -2,25 +2,27 @@
 
 header('Content-Type: text/html');
 
-if(!isset($_FILES['image'])){
-    die("No image uploaded");
+if (!isset($_FILES['image'])) {
+    die('<div class="result-card">No image uploaded.</div>');
 }
 
 $uploadDir = "uploads/";
 
-if(!is_dir($uploadDir)){
-    mkdir($uploadDir,0777,true);
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0777, true);
 }
 
 $fileName = time() . "_" . basename($_FILES["image"]["name"]);
 $targetFile = $uploadDir . $fileName;
 
-move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile);
+if (!move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+    die('<div class="result-card">Image upload failed.</div>');
+}
 
+$imageType = mime_content_type($targetFile);
 $imageData = base64_encode(file_get_contents($targetFile));
 
-$apiKey = "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";
-
+$apiKey = "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";
 
 $payload = [
     "model" => "google/gemma-3-27b-it:free",
@@ -67,7 +69,7 @@ curl_setopt_array($ch, [
     CURLOPT_HTTPHEADER => [
         "Authorization: Bearer " . $apiKey,
         "Content-Type: application/json",
-        "HTTP-Referer: https://yourdomain.com",
+        "HTTP-Referer: https://thebizportwebs.online",
         "X-Title: Skin Analyzer"
     ],
     CURLOPT_POSTFIELDS => json_encode($payload)
