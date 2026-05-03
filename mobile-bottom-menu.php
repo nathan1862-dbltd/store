@@ -89,18 +89,12 @@ body{
     align-items:center;
     justify-content:space-around;
 
-    border-radius:999px;
-
-    background:rgba(255,255,255,0.78);
-
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,0.45);
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.06),
-        inset 0 1px 0 rgba(255,255,255,0.55);
+    border-radius:32px;
+    overflow:hidden;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 /* MENU ITEM */
