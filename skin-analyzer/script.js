@@ -7,7 +7,7 @@ document.getElementById("skinForm").addEventListener("submit", async function(e)
   document.getElementById("loading").classList.remove("hidden");
   document.getElementById("result").innerHTML = "";
 
-  const response = await fetch("analyze.php",{
+  const response = await fetch("/skin-analyzer/analyze.php",{
     method:"POST",
     body:formData
   });
