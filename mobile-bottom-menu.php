@@ -1,11 +1,16 @@
+<?php
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
+
 <!-- BOTTOM MENU -->
+
 <div class="bottom-nav-wrapper">
 
     <div class="bottom-nav">
 
         <!-- HOME -->
         <a href="index.php"
-           class="nav-item <?= ($current_page == 'index.php') ? 'active' : ''; ?>">
+           class="nav-item <?php echo ($current_page == 'index.php') ? 'active' : ''; ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -22,7 +27,7 @@
 
         <!-- SHOP -->
         <a href="shop.php"
-           class="nav-item <?= ($current_page == 'shop.php') ? 'active' : ''; ?>">
+           class="nav-item <?php echo ($current_page == 'shop.php') ? 'active' : ''; ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -39,7 +44,7 @@
 
         <!-- ADD -->
         <a href="add.php"
-           class="nav-item <?= ($current_page == 'add.php') ? 'active' : ''; ?>">
+           class="nav-item <?php echo ($current_page == 'add.php') ? 'active' : ''; ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -56,7 +61,7 @@
 
         <!-- SETTINGS -->
         <a href="settings.php"
-           class="nav-item <?= ($current_page == 'settings.php') ? 'active' : ''; ?>">
+           class="nav-item <?php echo ($current_page == 'settings.php') ? 'active' : ''; ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -65,14 +70,14 @@
 
                 <path stroke-linecap="round"
                       stroke-width="2"
-                      d="M6 4v10m0 0a2 2 0 1 0 0 4"/>
+                      d="M6 4v10"/>
             </svg>
 
         </a>
 
         <!-- PROFILE -->
         <a href="profile.php"
-           class="nav-item <?= ($current_page == 'profile.php') ? 'active' : ''; ?>">
+           class="nav-item <?php echo ($current_page == 'profile.php') ? 'active' : ''; ?>">
 
             <svg xmlns="http://www.w3.org/2000/svg"
                  fill="none"
@@ -113,16 +118,14 @@
 
     border-radius:999px;
 
-    background:rgba(255,255,255,0.72);
+    background:rgba(255,255,255,0.75);
 
-    backdrop-filter:blur(22px);
-    -webkit-backdrop-filter:blur(22px);
+    backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,0.45);
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.06),
-        inset 0 1px 0 rgba(255,255,255,0.6);
+        0 10px 30px rgba(0,0,0,0.06);
 }
 
 .nav-item{
@@ -137,9 +140,9 @@
 
     color:#71717a;
 
-    transition:0.25s ease;
-
     text-decoration:none;
+
+    transition:0.25s ease;
 }
 
 .nav-item svg{
@@ -147,16 +150,13 @@
     height:24px;
 }
 
-.nav-item:hover{
-    transform:translateY(-3px);
-}
-
 .nav-item.active{
     background:#6b7280;
     color:#ffffff;
+}
 
-    box-shadow:
-        0 10px 20px rgba(107,114,128,0.30);
+.nav-item:hover{
+    transform:translateY(-2px);
 }
 
 body{
@@ -164,7 +164,6 @@ body{
 }
 
 </style>
-
 <script>
 
 document.addEventListener('DOMContentLoaded', () => {
