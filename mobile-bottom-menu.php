@@ -2,7 +2,7 @@
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
-<!-- BOTTOM MENU -->
+<!-- MOBILE BOTTOM MENU -->
 
 <div class="bottom-nav-wrapper">
 
@@ -70,7 +70,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
                 <path stroke-linecap="round"
                       stroke-width="2"
-                      d="M6 4v10"/>
+                      d="M6 4v10m0 0a2 2 0 1 0 0 4"/>
             </svg>
 
         </a>
@@ -98,16 +98,33 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
+body{
+    padding-bottom:120px;
+}
+
+/* NAV WRAPPER */
+
 .bottom-nav-wrapper{
     position:fixed;
+
     bottom:20px;
     left:50%;
+
     transform:translateX(-50%);
+
     width:100%;
     max-width:420px;
+
     padding:0 16px;
+
     z-index:999;
 }
+
+/* NAVIGATION */
 
 .bottom-nav{
     height:74px;
@@ -118,15 +135,19 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
     border-radius:999px;
 
-    background:rgba(255,255,255,0.75);
+    background:rgba(255,255,255,0.78);
 
     backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,0.45);
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.06);
+        0 10px 30px rgba(0,0,0,0.06),
+        inset 0 1px 0 rgba(255,255,255,0.55);
 }
+
+/* MENU ITEM */
 
 .nav-item{
     width:50px;
@@ -138,52 +159,43 @@ $current_page = basename($_SERVER['PHP_SELF']);
     align-items:center;
     justify-content:center;
 
-    color:#71717a;
-
     text-decoration:none;
 
-    transition:0.25s ease;
+    color:#71717a;
+
+    transition:all 0.25s ease;
 }
+
+/* ICON */
 
 .nav-item svg{
     width:24px;
     height:24px;
+
+    stroke:currentColor;
 }
 
-.nav-item.active{
-    background:#6b7280;
-    color:#ffffff;
-}
+/* HOVER */
 
 .nav-item:hover{
     transform:translateY(-2px);
 }
 
-body{
-    padding-bottom:120px;
+/* ACTIVE */
+
+.nav-item.active{
+    background:#6b7280;
+
+    color:#ffffff;
+
+    box-shadow:
+        0 10px 20px rgba(107,114,128,0.30);
+}
+
+/* ACTIVE ICON */
+
+.nav-item.active svg{
+    stroke:#ffffff;
 }
 
 </style>
-<script>
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const navItems = document.querySelectorAll('.nav-item');
-
-    navItems.forEach(item => {
-
-        item.addEventListener('click', () => {
-
-            navItems.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            item.classList.add('active');
-
-        });
-
-    });
-
-});
-
-</script>
