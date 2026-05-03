@@ -19,7 +19,7 @@ move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile);
 
 $imageData = base64_encode(file_get_contents($targetFile));
 
-$apiKey = "YOUR_OPENROUTER_API_KEY";
+$apiKey = "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";
 
 $data = [
     "model" => "meta-llama/llama-3.2-11b-vision-instruct:free",
@@ -51,7 +51,7 @@ curl_setopt_array($ch, [
     CURLOPT_HTTPHEADER => [
         "Authorization: Bearer " . $apiKey,
         "Content-Type: application/json",
-        "HTTP-Referer: https://yourdomain.com",
+        "HTTP-Referer: https://thebizportwebs.online",
         "X-Title: Skin Analyzer"
     ],
     CURLOPT_POSTFIELDS => json_encode($data)
