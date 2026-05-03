@@ -299,7 +299,25 @@ function slide(id, dir) {
   if (!el) return;
   el.scrollBy({ left: dir * 260, behavior: 'smooth' });
 }
+document.addEventListener('DOMContentLoaded', () => {
 
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+
+        item.addEventListener('click', () => {
+
+            navItems.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            item.classList.add('active');
+
+        });
+
+    });
+
+});
 </script>
 
 
