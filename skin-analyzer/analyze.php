@@ -25,7 +25,7 @@ $imageData = base64_encode(file_get_contents($targetFile));
 $apiKey = "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";
 
 $payload = [
-    "model" => "google/gemma-3-27b-it:free",
+    "model" => "openrouter/free",
     "messages" => [
         [
             "role" => "user",
@@ -69,7 +69,7 @@ curl_setopt_array($ch, [
     CURLOPT_HTTPHEADER => [
         "Authorization: Bearer " . $apiKey,
         "Content-Type: application/json",
-        "HTTP-Referer: https://thebizportwebs.online",
+        "HTTP-Referer: https://thebizportwebs.online/skin-analyzer/",
         "X-Title: Skin Analyzer"
     ],
     CURLOPT_POSTFIELDS => json_encode($payload)
